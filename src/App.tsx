@@ -5,6 +5,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Register from "./pages/Register"
 import Person from "./pages/RegisterPerson"
 import Business from "./pages/RegisterBusiness"
+import Dog from "./pages/RegisterDog"
+import Login from "./pages/Login"
+import Validar from "./pages/Validar"
+import Perfil from  "./pages/Perfil"
 
 function App() {
   return <>
@@ -15,7 +19,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cadastro" element={<Register />} />
           <Route path="/cadastro/pessoa" element={<Person />} />
-          <Route path="/cadastro/pessoajuridica" element={<Business />} />
+          <Route path="/cadastro/pessoa/juridica" element={<Business />} />
+          <Route path="/cadastro/cão" element={<Dog />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Validar" element={<Validar />} />
+          <Route path="/Perfil" element={<Perfil />} />
+
         </Routes>
       </BrowserRouter>
     </main>
