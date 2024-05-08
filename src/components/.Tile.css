@@ -1,0 +1,44 @@
+/* @import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+ */
+/* .menu-item {
+    --menu-item-size: 250px;
+    
+    width: var(--menu-item-size);
+    height: var(--menu-item-size);
+
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding: 1em;
+    box-shadow: 0 3px 6px #00000029;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+/* .menu-item .title {
+    font-family: "Open Sans", sans-serif;
+} */
+
+/* .menu-item .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;                        
+    height: 100%;
+    font-size: 7em
+} */
+
+/* .menu-item .actions {
+    height: 100px;
+}
+ */
+/* .menu-item .actions button{
+    height: 100%;
+    background-color: #d4d4d4;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    outline: none;
+    padding: .3em;
+} */
