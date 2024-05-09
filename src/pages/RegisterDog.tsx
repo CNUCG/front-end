@@ -1,27 +1,12 @@
-import styled from "styled-components"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-const Titulo = styled.h1 `
-    font-family: "Acme", sans-serif;
-    font-size: 5vh;
-    
-`
-const Sub_titulo = styled.h4`
-    font-family: "Open Sans", sans-serif;
-    font-size: 4vh;
-    font-weight: bold;
-`
 
- const Form_cont = styled.form`
-    background-color: #DC143C;
-    border-radius: 45px;
- `
 export default function () {
     return <>
         <Form>
-            <Titulo>Cadastro de cão guia</Titulo>
-            <Sub_titulo className='Sub_titulo'>Dados de identificação </Sub_titulo>
+            <h1>Cadastro de cão guia</h1>
+            <h2 className='Sub_titulo'>Dados de identificação </h2>
 
             <Form.Group className="mb-3" >
                 <Form.Label>Nome do cão</Form.Label>
@@ -36,8 +21,8 @@ export default function () {
             <Form.Group className="mb-3" >
                 <Form.Label>Sexo</Form.Label>
                 <Form.Select >
-                    <option>Feminino</option>
-                    <option>Masculino</option>
+                    <option value="fem">Feminino</option>
+                    <option value="masc">Masculino</option>
                 </Form.Select>
             </Form.Group>
 

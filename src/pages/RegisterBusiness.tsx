@@ -6,7 +6,7 @@ export default function () {
         <Form>
             <h1 className='Titulo'>Cadastro de usuário cães guia</h1>
             <h2 className='Titulo'>Pessoa Jurídica</h2>
-            <h4 className='Sub_titulo'>Dados de identificação </h4>
+            <h3 className='Sub_titulo'>Dados de identificação </h3>
 
             <Form.Group className="mb-3" >
                 <Form.Label>Razão social</Form.Label>
@@ -18,7 +18,7 @@ export default function () {
                 <Form.Control type="text" placeholder="Digite seu CNPJ" />
             </Form.Group>
 
-            <h4 className='Sub_itulo'>Endereço</h4>
+            <h3 className='Sub_itulo'>Endereço</h3>
             <Form.Group className="mb-3" >
                 <Form.Label>CEP</Form.Label>
                 <Form.Control type="text" placeholder="Digite seu CEP" />
@@ -54,7 +54,7 @@ export default function () {
                 <Form.Control type="text" placeholder="Digite seu bairro" />
             </Form.Group>
 
-            <h4 className='Sub_itulo'>Dados para contato</h4>
+            <h3 className='Sub_itulo'>Dados para contato</h3>
             <Form.Group className="mb-3" >
                 <Form.Label>E-mail</Form.Label>
                 <Form.Control type="email" placeholder="Digite seu e-mail" />
@@ -75,7 +75,7 @@ export default function () {
                 <Form.Control type="text" placeholder="Digite sua instituição" />
             </Form.Group>
 
-            <h4 className='Sub_itulo'>Segurança</h4>
+            <h3 className='Sub_itulo'>Segurança</h3>
             <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Senha</Form.Label>
                 <Form.Control type="password" placeholder="Crie uma senha" />
