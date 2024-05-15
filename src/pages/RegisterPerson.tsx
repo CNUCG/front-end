@@ -1,99 +1,108 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+/* import Container from 'react-bootstrap/Container'; */
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export default function () {
     return <>
         <Form>
             <h1 className='Titulo'>Cadastro de usuário cães guia</h1>
-            <h2 className='Titulo'>Pessoa Física</h2>
-            <h3 className='Sub_titulo'>Dados de identificação </h3>
+            <Row>
+                <h2 className='Titulo'>Pessoa Física</h2>
+                <h3 className='Sub_titulo'>Dados de identificação </h3>
 
-            <Form.Group className="mb-3" >
-                <Form.Label>Nome Completo</Form.Label>
-                <Form.Control type="text" placeholder="Digite seu nome" />
-            </Form.Group>
+                <Col className="mb-3" >
+                    <Form.Label>Nome Completo</Form.Label>
+                    <Form.Control type="text" placeholder="Digite seu nome" />
+                </Col>
 
-            <Form.Group className="mb-3" >
-                <Form.Label>Data de nascimento</Form.Label>
-                <Form.Control type="date" />
-            </Form.Group>
+                <Col className="mb-3" >
+                    <Form.Label>Data de nascimento</Form.Label>
+                    <Form.Control type="date" />
+                </Col>
+            </Row>
+            <Row>
+                <Col className="mb-3" >
+                    <Form.Label>RG</Form.Label>
+                    <Form.Control type="text" placeholder="Digite seu RG" />
+                </Col>
 
-            <Form.Group className="mb-3" >
-                <Form.Label>RG</Form.Label>
-                <Form.Control type="text" placeholder="Digite seu RG" />
-            </Form.Group>
+                <Col className="mb-3" >
+                    <Form.Label>CPF</Form.Label>
+                    <Form.Control type="text" placeholder="Digite seu CPF" />
+                </Col>
 
-            <Form.Group className="mb-3" >
-                <Form.Label>CPF</Form.Label>
-                <Form.Control type="text" placeholder="Digite seu CPF" />
-            </Form.Group>
+                <Col className="mb-3" >
+                    <Form.Label>Sexo</Form.Label>
+                    <Form.Select>
+                        <option>Feminino</option>
+                        <option>Masculino</option>
+                        <option>Prefiro não informar</option>
+                    </Form.Select>
+                </Col>
+            </Row>
 
-            <Form.Group className="mb-3" >
-                <Form.Label>Sexo</Form.Label>
-                <Form.Select>
-                    <option>Feminino</option>
-                    <option>Masculino</option>
-                    <option>Prefiro não informar</option>
-                </Form.Select>
-            </Form.Group>
+            <Row>
+                <h3 className='Sub_itulo'>Endereço</h3>
+                <Col className="mb-3" >
+                    <Form.Label>CEP</Form.Label>
+                    <Form.Control type="text" placeholder="Digite seu CEP" />
+                </Col>
 
-            <h3 className='Sub_itulo'>Endereço</h3>
-            <Form.Group className="mb-3" >
-                <Form.Label>CEP</Form.Label>
-                <Form.Control type="text" placeholder="Digite seu CEP" />
-            </Form.Group>
+                <Col className="mb-3" >
+                    <Form.Label>Estado</Form.Label>
+                    <Form.Control type="text" placeholder="Digite seu estado" />
+                </Col>
 
-            <Form.Group className="mb-3" >
-                <Form.Label>Estado</Form.Label>
-                <Form.Control type="text" placeholder="Digite seu estado" />
-            </Form.Group>
-
-            <Form.Group className="mb-3" >
-                <Form.Label>Cidade</Form.Label>
-                <Form.Control type="text" placeholder="Digite seu cidade" />
-            </Form.Group>
-
+                <Col className="mb-3" >
+                    <Form.Label>Cidade</Form.Label>
+                    <Form.Control type="text" placeholder="Digite seu cidade" />
+                </Col>
+            </Row>
             <Form.Group className="mb-3" >
                 <Form.Label>Logradouro</Form.Label>
                 <Form.Control type="text" placeholder="Digite seu logradouro" />
             </Form.Group>
+            <Row>
+                <Col className="mb-3" >
+                    <Form.Label>Número</Form.Label>
+                    <Form.Control type="text" placeholder="Digite seu número" />
+                </Col>
+                
+                <Col className="mb-3" >
+                    <Form.Label>Complemento</Form.Label>
+                    <Form.Control type="text" placeholder="Digite o complemento" />
+                </Col>
 
-            <Form.Group className="mb-3" >
-                <Form.Label>Número</Form.Label>
-                <Form.Control type="text" placeholder="Digite seu número" />
-            </Form.Group>
-            
-            <Form.Group className="mb-3" >
-                <Form.Label>Complemento</Form.Label>
-                <Form.Control type="text" placeholder="Digite o complemento" />
-            </Form.Group>
+                <Col className="mb-3" >
+                    <Form.Label>Bairro</Form.Label>
+                    <Form.Control type="text" placeholder="Digite seu bairro" />
+                </Col>
+            </Row>
+            <Row>
+                <h3 className='Sub_itulo'>Dados para contato</h3>
+                <Col className="mb-3" >
+                    <Form.Label>E-mail</Form.Label>
+                    <Form.Control type="email" placeholder="Digite seu e-mail" />
+                </Col>
 
-            <Form.Group className="mb-3" >
-                <Form.Label>Bairro</Form.Label>
-                <Form.Control type="text" placeholder="Digite seu bairro" />
-            </Form.Group>
+                <Col className="mb-3" >
+                    <Form.Label>Confirmação de E-mail</Form.Label>
+                    <Form.Control type="text" placeholder="Digite novamente seu e-mail" />
+                </Col>
+            </Row>
+            <Row>
+                <Col className="mb-3" >
+                    <Form.Label>Telefone</Form.Label>
+                    <Form.Control type="phone" placeholder="Digite seu telefone" />
+                </Col>
 
-            <h3 className='Sub_itulo'>Dados para contato</h3>
-            <Form.Group className="mb-3" >
-                <Form.Label>E-mail</Form.Label>
-                <Form.Control type="email" placeholder="Digite seu e-mail" />
-            </Form.Group>
-
-            <Form.Group className="mb-3" >
-                <Form.Label>Confirmação de E-mail</Form.Label>
-                <Form.Control type="text" placeholder="Digite novamente seu e-mail" />
-            </Form.Group>
-
-            <Form.Group className="mb-3" >
-                <Form.Label>Telefone</Form.Label>
-                <Form.Control type="phone" placeholder="Digite seu telefone" />
-            </Form.Group>
-
-            <Form.Group className="mb-3" >
-                <Form.Label>Instituição</Form.Label>
-                <Form.Control type="text" placeholder="Digite sua instituição" />
-            </Form.Group>
-
+                <col className="mb-3" >
+                    <Form.Label>Instituição</Form.Label>
+                    <Form.Control type="text" placeholder="Digite sua instituição" />
+                </col>
+            </Row>
             <h3 className='Sub_itulo'>Segurança</h3>
             <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Senha</Form.Label>
