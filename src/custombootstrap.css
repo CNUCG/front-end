@@ -7,6 +7,7 @@
 h1{
     font-family: "Varela Round", sans-serif;
     font-weight: bold;
+
 }
 
 h2{
@@ -22,9 +23,9 @@ h3{
 .Form-Group, .mb-3{
     font-family: "Open Sans", sans-serif;
 }
-.form-control {
+.form-control, .form-select{
     background-color: brown;
     border-radius: 100px;
     padding: 3.5px;
-/*     padding-left: 5px; */
+    padding-left: 5px;
 }

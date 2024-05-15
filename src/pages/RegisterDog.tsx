@@ -27,7 +27,7 @@ export default function () {
             </Form.Group>
 
             <Form.Group className="mb-3" >
-                <Form.Label>Número de registro//</Form.Label>
+                <Form.Label>Número de registro</Form.Label>
                 <Form.Control type="text" placeholder="Digite o número de registro do cão" />
             </Form.Group>
 
