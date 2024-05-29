@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 export default function () {
     return <>
+        qwdeqwdasd
         <Form>
             <h1 className='Titulo'>Cadastro de usuário cães guia</h1>
             <Row>
@@ -98,10 +99,10 @@ export default function () {
                     <Form.Control type="phone" placeholder="Digite seu telefone" />
                 </Col>
 
-                <col className="mb-3" >
+                <Col className="mb-3" >
                     <Form.Label>Instituição</Form.Label>
                     <Form.Control type="text" placeholder="Digite sua instituição" />
-                </col>
+                </Col>
             </Row>
             <h3 className='Sub_itulo'>Segurança</h3>
             <Form.Group className="mb-3" controlId="formBasicPassword">
