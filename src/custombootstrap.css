@@ -24,8 +24,10 @@ h3{
     font-family: "Open Sans", sans-serif;
 }
 .form-control, .form-select{
-    background-color: brown;
-    border-radius: 100px;
-    padding: 3.5px;
-    padding-left: 5px;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+}
+.btn{
+    border-radius: 10px;
+    padding: 0.5em 1em;
 }
