@@ -18,13 +18,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cadastro/pessoa" element={<Person />} />
+          <Route path="/cadastro/Pessoa" element={<Person />} />
           <Route path="/cadastro/pessoa/juridica" element={<Business />} />
           <Route path="/cadastro/cão" element={<Dog />} />
           <Route path="/cadastro" element={<Register />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Validar" element={<Validar />} />
           <Route path="/Perfil" element={<Perfil />} />
+          
 
         </Routes>
       </BrowserRouter>

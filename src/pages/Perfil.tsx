@@ -17,8 +17,11 @@ const HomeContainer = styled.div`
 export default function () {
     return (
         <HomeContainer>
-            <Perfilfoto icon="qr_code_2" title="Perfil do Usuário" nome="lucas " />
-            <Perfilfoto icon="sound_detection_dog_barking" title="Perfil do Cão" nome="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />        
+            <Perfilfoto icon="qr_code_2" title="Perfil do Usuário" nome="Nome" Instituicao= "Instituicao" Telefone= "Telefone" Endereco= "Endereco" CEP= "CEP" Estado= "Estado"
+             Cidade= "Cidade" Logradouro= "Logradouro" Numero= "Numero" Complemento= "Complemento"  Bairro= "Bairro"/>
+
+            <Perfilfoto icon="sound_detection_dog_barking" title="Perfil do Cão" nomecao="Nome do cao" Raca="Raça" Cor= "Cor" Sexo="Sexo" 
+            Numeroreg="Numero de Registro" Status="Status"  />        
             </HomeContainer>
     )
 }

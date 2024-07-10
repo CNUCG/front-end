@@ -122,19 +122,18 @@ export default function () {
                         </Form.Group>
                     </Row>
                     <Row>
-                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Ao informar meu dados,estou ciente que..." />
-                        </Form.Group>
+                        <div className="conf">
+                            <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                <Form.Check type="checkbox" label="Ao informar meu dados,estou ciente que..." />
+                            </Form.Group>
 
-                        <Button variant="primary" type="submit">
-                            Cadastrar
-                        </Button>
+                            <Button variant="primary" type="submit">
+                                Cadastrar
+                            </Button>
+                        </div>
                     </Row>
                 </Col>
-
             </Row>
-
-
         </Form>
     </>
 } 
