@@ -12,6 +12,8 @@ const Menu_item = styled.div`
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    border:10px;
+
     
 `
 
@@ -56,7 +58,7 @@ font-size: 1em;
 const Nome = styled.div`
 padding: 5px;
 display: flex;
-justify-content: left;
+justify-content: right;
 align-items: start;                        
 font-size: 1em;
 `
@@ -166,29 +168,27 @@ align-items: start;
 font-size: 1em;
 `
 interface Props {
-    title: String
-    nome: String
-    icon: String
-    Email: String
-    Telefone: String
-    Instituicao: String
-    CEP: String
-    Estado: String
-    Cidade: String
-    Logradouro: String
-    Numero: String
-    Complemento: String
-    Bairro: String
-    Endereco: String
+    title?: String
+    nome?: String
+    icon?: String
+    Email?: String
+    Telefone?: String
+    Instituicao?: String
+    CEP?: String
+    Estado?: String
+    Cidade?: String
+    Logradouro?: String
+    Numero?: String
+    Complemento?: String
+    Bairro?: String
+    Endereco?: String
 
-    Raca: String
-    Cor: String
-    Sexo: String
-    Numeroreg: String
-    Status: String
-    nomecao: String
-    
-
+    Raca?: String
+    Cor?: String
+    Sexo?: String
+    Numeroreg?: String
+    Status?: String
+    nomecao?: String
 }
 
 export default function (props: Props) {

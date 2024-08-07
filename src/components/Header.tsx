@@ -26,7 +26,7 @@ export default function () {
     return <>
         <Header>
             <Logo>
-                <Img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Instituto_Federal_Marca_2015.svg/640px-Instituto_Federal_Marca_2015.svg.png"></Img>
+                <Img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Instituto_Federal_Marca_2015.svg/640px-Instituto_Federal_Marca_2015.svg.png" title="logo do ifc" alt=""></Img>
             </Logo>
 
             <Search>

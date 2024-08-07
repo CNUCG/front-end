@@ -7,9 +7,9 @@ import Person from "./pages/RegisterPerson"
 import Business from "./pages/RegisterBusiness"
 import Dog from "./pages/RegisterDog"
 import Login from "./pages/Login"
-import Validar from "./pages/Validar"
+import Autenticar from "./pages/Autenticar"
 import Perfil from  "./pages/Perfil"
-
+import Validar from  "./pages/Validar"
 
 function App() {
   return <>
@@ -18,15 +18,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cadastro/Pessoa" element={<Person />} />
-          <Route path="/cadastro/pessoa/juridica" element={<Business />} />
+          <Route path="/cadastro/usuário" element={<Person />} />
+          <Route path="/cadastro/instituição" element={<Business />} />
           <Route path="/cadastro/cão" element={<Dog />} />
           <Route path="/cadastro" element={<Register />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Validar" element={<Validar />} />
-          <Route path="/Perfil" element={<Perfil />} />
-          
-
+          <Route path="/login" element={<Login />} />
+          <Route path="/autenticar" element={<Autenticar />} />
+          <Route path="/perfil" element={<Perfil />} />
+          <Route path="/validar" element={<Validar />} />
         </Routes>
       </BrowserRouter>
     </main>

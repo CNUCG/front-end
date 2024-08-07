@@ -35,8 +35,9 @@ export default function () {
                 <div>O projeto de cão-guia oferece um treinamento especializado para preparar cães que irão auxiliar pessoas com deficiência visual, garantindo-lhes independência e mobilidade na sua rotina.</div>
             </Sub_titulo>
             <ContainerBts>
-                <Button variant="secondary">Pessoa Física</Button>{' '}
-                <Button variant="secondary">Pessoa jurídica</Button>{' '}
+                <Button variant="secondary">Usuário</Button>{' '}
+                <Button variant="secondary">Instituição</Button>{' '}
+                <Button variant="secondary">Cão</Button>{' '}
             </ContainerBts>
         </Cadastro>
     </>

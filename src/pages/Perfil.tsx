@@ -1,5 +1,5 @@
-import Perfilfoto from "../components/perfilfoto"
-import styled from "styled-components"
+import Perfilfoto from "../components/perfilfoto";
+import styled from "styled-components";
 
 const HomeContainer = styled.div`
     display: flex;
@@ -11,17 +11,36 @@ const HomeContainer = styled.div`
 
     place-self: center;
     flex-grow: 1;
-`
+`;
 
-
-export default function () {
+export default function Home() {
     return (
         <HomeContainer>
-            <Perfilfoto icon="qr_code_2" title="Perfil do Usuário" nome="Nome" Instituicao= "Instituicao" Telefone= "Telefone" Endereco= "Endereco" CEP= "CEP" Estado= "Estado"
-             Cidade= "Cidade" Logradouro= "Logradouro" Numero= "Numero" Complemento= "Complemento"  Bairro= "Bairro"/>
-
-            <Perfilfoto icon="sound_detection_dog_barking" title="Perfil do Cão" nomecao="Nome do cao" Raca="Raça" Cor= "Cor" Sexo="Sexo" 
-            Numeroreg="Numero de Registro" Status="Status"  />        
-            </HomeContainer>
-    )
+            <Perfilfoto 
+                icon="qr_code_2" 
+                title="Perfil do Usuário" 
+                nome="Nome" 
+                Instituicao="Instituição" 
+                Telefone="Telefone" 
+                Endereco="Endereço" 
+                CEP="CEP" 
+                Estado="Estado"
+                Cidade="Cidade" 
+                Logradouro="Logradouro" 
+                Numero="Número" 
+                Complemento="Complemento"  
+                Bairro="Bairro"
+            />
+            <Perfilfoto 
+                icon="sound_detection_dog_barking" 
+                title="Perfil do Cão" 
+                nomecao="Nome do cão" 
+                Raca="Raça" 
+                Cor="Cor" 
+                Sexo="Sexo" 
+                Numeroreg="Número de Registro" 
+                Status="Status"  
+            />
+        </HomeContainer>
+    );
 }
