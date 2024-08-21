@@ -10,6 +10,7 @@ import Login from "./pages/Login"
 import Autenticar from "./pages/Autenticar"
 import Perfil from  "./pages/Perfil"
 import Validar from  "./pages/Validar"
+import Carteira from  "./pages/Carteira"
 
 function App() {
   return <>
@@ -26,6 +27,7 @@ function App() {
           <Route path="/autenticar" element={<Autenticar />} />
           <Route path="/perfil" element={<Perfil />} />
           <Route path="/validar" element={<Validar />} />
+          <Route path="/carteira" element={<Carteira />} />
         </Routes>
       </BrowserRouter>
     </main>
