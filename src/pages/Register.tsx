@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 
 const Cadastro = styled.div`
@@ -35,9 +36,15 @@ export default function () {
                 <div>O projeto de cão-guia oferece um treinamento especializado para preparar cães que irão auxiliar pessoas com deficiência visual, garantindo-lhes independência e mobilidade na sua rotina.</div>
             </Sub_titulo>
             <ContainerBts>
-                <Button variant="secondary">Usuário</Button>{' '}
-                <Button variant="secondary">Instituição</Button>{' '}
-                <Button variant="secondary">Cão</Button>{' '}
+            <Link to="/cadastro/usuário" >
+            <Button variant="secondary" > Usuário </Button>
+            </Link>
+            <Link to="/cadastro/instituição" >
+            <Button variant="secondary" > Instituição </Button>
+            </Link>
+            <Link to="/cadastro/cão" >
+            <Button variant="secondary" type="submit"> Cão </Button>
+            </Link>
             </ContainerBts>
         </Cadastro>
     </>

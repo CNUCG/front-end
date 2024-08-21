@@ -58,9 +58,10 @@ font-size: 1em;
 const Nome = styled.div`
 padding: 5px;
 display: flex;
-justify-content: right;
+justify-content: left;
 align-items: start;                        
 font-size: 1em;
+
 `
 const Telefone = styled.div`
 display: flex;
@@ -244,6 +245,9 @@ export default function (props: Props) {
                 </Bairro>
 
                 
+                <Nomecao data-permission="any only-unlogged" className="show">
+                    {props.nomecao}
+                </Nomecao>
                 <Raca data-permission="any only-unlogged" className="show">
                     {props.Raca}
                 </Raca>
@@ -260,9 +264,7 @@ export default function (props: Props) {
                     {props.Status}
                 </Status>
 
-                <Nomecao data-permission="any only-unlogged" className="show">
-                    {props.nomecao}
-                </Nomecao>
+                
 
             </Actions>
 
