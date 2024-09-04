@@ -13,11 +13,6 @@ const Footer = styled.footer`
     gap: 10px;
     user-select: none;
 
-    > div {
-        border: 1px solid red;
-    }
-
-
     a {
         color: rgb(0, 0, 0);
         text-decoration: none;
@@ -26,7 +21,7 @@ const Footer = styled.footer`
     .redes-sociais {
         display: flex;
         gap: .5em;
-
+        justify-content: flex-end;
         img {
             width: 2em;
         }
