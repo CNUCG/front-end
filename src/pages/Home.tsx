@@ -4,15 +4,12 @@ import styled from "styled-components"
 
 const HomeContainer = styled.div`
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 1em; 
+    padding: 2em;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    height: 100%;
-
-    place-self: center;
     flex-grow: 1;
-
     a {
         color: inherit;
         text-decoration: none
