@@ -19,6 +19,44 @@ const HomeContainer = styled.div`
     }
 `
 
+const tiles = {
+    login:
+        <Tile to="/login"
+            icon="assignment_ind"
+            title="Acesso"
+            button="Acesse o sistema para as demais funcionalidades!" />,
+
+    validar:
+        <Tile to="/validar"
+            icon="inventory"
+            title="Processo de validação "
+            button="Acesse para validar o cadastro do usuário e seu cão " />,
+
+    autenticar:
+        <Tile to="/autenticar"
+            icon="qr_code_2"
+            title="Verificar Autenticidade"
+            button="Quero verificar a autenticidade de uma carteina nacional de usuário de cão guia" />,
+
+    cadastro_usuario:
+        <Tile to="/cadastro/usuário"
+            icon="person_add"
+            title="Novo cadastro"
+            button="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />,
+
+    cadastro_cao:
+        <Tile to="/cadastro/cão"
+            icon="sound_detection_dog_barking"
+            title="Novo cadastro"
+            button="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />,
+
+    cadastro_instituicao:
+        <Tile to="/cadastro/instituição"
+            icon="book_5"
+            title="Novo cadastro"
+            button="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />,
+}
+
 export default function () {
     const [hash, setHash] = useState<string>("")
 
@@ -30,71 +68,27 @@ export default function () {
     return (
         <HomeContainer>
             {hash === "" && <>
-                <Tile to="/autenticar"
-                    icon="qr_code_2"
-                    title="Verificar Autenticidade"
-                    button="Quero verificar a autenticidade de uma carteina nacional de usuário de cão guia" />
-
-                <Tile to="/cadastro/usuário"
-                    icon="person_add"
-                    title="Novo cadastro"
-                    button="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />
-
-                <Tile to="/login"
-                    icon="assignment_ind"
-                    title="Acesso"
-                    button="Acesse o sistema para as demais funcionalidades!" />
+                {tiles.autenticar}
+                {tiles.cadastro_usuario}
+                {tiles.login}
             </>}
 
             {hash === "#usuario" && <>
-                <Tile to="/autenticar"
-                    icon="qr_code_2"
-                    title="Verificar Autenticidade"
-                    button="Quero verificar a autenticidade de uma carteina nacional de usuário de cão guia" />
-
-                <Tile to="/cadastro/cão"
-                    icon="sound_detection_dog_barking"
-                    title="Novo cadastro"
-                    button="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />
+                {tiles.autenticar}
+                {tiles.cadastro_cao}
             </>}
 
             {hash === "#instituicao" && <>
-                <Tile to="/cadastro/usuário"
-                    icon="person_add"
-                    title="Novo cadastro"
-                    button="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />
-                
-                <Tile to="/cadastro/cão"
-                    icon="sound_detection_dog_barking"
-                    title="Novo cadastro"
-                    button="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />
-                
-                <Tile to="/validar"
-                    icon="inventory"
-                    title="Processo de validação "
-                    button="Acesse para validar o cadastro do usuário e seu cão " />
+                {tiles.cadastro_usuario}
+                {tiles.cadastro_usuario}
+                {tiles.validar}
             </>}
 
             {hash === "#instituicao-ifc" && <>
-                <Tile to="/cadastro/instituição"
-                    icon="book_5"
-                    title="Novo cadastro"
-                    button="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />
-                
-                <Tile to="/cadastro/usuário"
-                    icon="person_add"
-                    title="Novo cadastro"
-                    button="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />
-                
-                <Tile to="/cadastro/cão"
-                    icon="sound_detection_dog_barking"
-                    title="Novo cadastro"
-                    button="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />
-                
-                <Tile to="/validar"
-                    icon="inventory"
-                    title="Processo de validação "
-                    button="Acesse para validar o cadastro do usuário e seu cão " />
+                {tiles.cadastro_instituicao}
+                {tiles.cadastro_usuario}
+                {tiles.cadastro_cao}
+                {tiles.validar}
             </>}
         </HomeContainer>
     )
