@@ -77,7 +77,7 @@ export default function () {
 
             {hash === "#instituicao-ifc" && <>
                 <Tile to="/cadastro/instituição"
-                    icon="book_4"
+                    icon="book_5"
                     title="Novo cadastro"
                     button="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />
                 
