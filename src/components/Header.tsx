@@ -14,13 +14,13 @@ const Logo = styled.div``
 const Img = styled.img`
     width: 2em;
 `
-const Search = styled.div`
-`
-const Input = styled.input`
-    border-radius: 50px;
-    border: none;
-    padding-left: 10px;
-`
+// const Search = styled.div`
+// `
+// const Input = styled.input`
+//     border-radius: 50px;
+//     border: none;
+//     padding-left: 10px;
+// `
 const Permission_name = styled.div``
 
 export default function () {
