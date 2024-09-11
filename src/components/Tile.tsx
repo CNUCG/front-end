@@ -1,3 +1,4 @@
+import { Link, To } from "react-router-dom"
 import styled from "styled-components"
 
 const Menu_item = styled.div`
@@ -28,7 +29,7 @@ const Icon = styled.span`
     height: 100%;
     font-size: 7em;
 `
-    
+
 const Actions = styled.div`
     height: 100px;
 `
@@ -47,22 +48,25 @@ interface Props {
     title: String
     button: String
     icon: String
+    to: To
 }
 
 export default function (props: Props) {
     return <>
-        <Menu_item>
-            <Title>
-                {props.title}
-            </Title>
-            <Icon className="icon material-symbols-outlined">
-                {props.icon}
-            </Icon>
-            <Actions>
-                <Button data-permission="any only-unlogged" className="show">
-                    {props.button}
-                </Button>
-            </Actions>
-        </Menu_item>
+        <Link to={props.to}>
+            <Menu_item>
+                <Title>
+                    {props.title}
+                </Title>
+                <Icon className="icon material-symbols-outlined">
+                    {props.icon}
+                </Icon>
+                <Actions>
+                    <Button data-permission="any only-unlogged" className="show">
+                        {props.button}
+                    </Button>
+                </Actions>
+            </Menu_item>
+        </Link>
     </>
 }

@@ -18,7 +18,7 @@ function App() {
     <main>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/cadastro/usuário" element={<Person />} />
           <Route path="/cadastro/instituição" element={<Business />} />
           <Route path="/cadastro/cão" element={<Dog />} />
