@@ -44,14 +44,14 @@ const tiles = {
     cadastro_cao:
         <Tile to="/cadastro/cão"
             icon="sound_detection_dog_barking"
-            title="Novo cadastro"
-            button="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />,
+            title="Cadastro cão"
+            button="Sou usuário de cão guia e quero cadastrar minha dupla" />,
 
     cadastro_instituicao:
         <Tile to="/cadastro/instituição"
             icon="book_5"
-            title="Novo cadastro"
-            button="Sou usuário de cão guia e quero me cadastrar para obter a carteina nacional de usuário de cão guia" />,
+            title="Cadastro de Instituição"
+            button="Cadastre uma instituição, que seja formadora de cães-guia" />,
 }
 
 export default function () {
@@ -77,7 +77,7 @@ export default function () {
 
             {hash === "#instituicao" && <>
                 {tiles.cadastro_usuario}
-                {tiles.cadastro_usuario}
+                {tiles.cadastro_cao}
                 {tiles.validar}
             </>}
 

@@ -7,8 +7,7 @@ import Col from 'react-bootstrap/Col';
 export default function () {
     return <>
         <Form>
-        <h1 className='Titulo'>Cadastro de usuário cães guia</h1>           
-            <h2 className='Titulo'>Pessoa Jurídica</h2>
+        <h1 className='Titulo'>Cadastro de Instituições</h1>           
            
             <Row>
                 <Col>        
@@ -102,13 +101,15 @@ export default function () {
                         </Form.Group>
                     </Row>
                     <Row>
-                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Ao informar meu dados,estou ciente que..." />
-                        </Form.Group>
+                    <div className="conf">
+                            <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                <Form.Check type="checkbox" label="Ao informar meu dados,estou ciente que..." />
+                            </Form.Group>
 
-                        <Button variant="primary" type="submit">
-                            Cadastrar
-                        </Button>
+                            <Button variant="primary" type="submit">
+                                Cadastrar
+                            </Button>
+                    </div>
                     </Row>
                 </Col>
             </Row>

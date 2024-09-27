@@ -8,7 +8,6 @@ export default function () {
     return <>
         <Form>
             <h1 className='Titulo'>Cadastro de usuário cães guia</h1>
-            <h2 className='Titulo'>Pessoa Física</h2>
 
             <Row>
                 <Col>

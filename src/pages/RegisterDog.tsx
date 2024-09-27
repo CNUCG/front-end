@@ -39,7 +39,7 @@ export default function () {
                     <Form.Control type="text" placeholder="Digite a cor do cão" />
                 </Col>
             </Row>
-
+''
             <Row>
                 <Col className="mb-3" >
                     <Form.Label>Data de nascimento</Form.Label>
@@ -51,10 +51,15 @@ export default function () {
                     <Form.Control type="text" placeholder="Digite sua instituição" />
                 </Col>
             </Row>
+            <div className="conf">
+                            <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                <Form.Check type="checkbox" label="Ao informar meu dados,estou ciente que..." />
+                            </Form.Group>
 
-            <Button variant="primary" type="submit">
-                Cadastrar
-            </Button>
+                            <Button variant="primary" type="submit">
+                                Cadastrar
+                            </Button>
+            </div>
         </Form>
     </>
 } 
